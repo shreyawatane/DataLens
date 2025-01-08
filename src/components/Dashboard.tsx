@@ -6,10 +6,10 @@ import { PerformanceChart } from "./dashboard-components/performance-chart";
 import { StatsCards } from "./dashboard-components/stats-cards";
 import { PieChartData } from "./dashboard-components/pie-chart";
 import { AreaChartLegend } from "./dashboard-components/area-charts";
-import { FollowersView } from "./followers-view";
-import { VisitorsBarchart } from "./visitors-barchart";
+import { FollowersView } from "./dashboard-components/followers-view";
+import { VisitorsBarchart } from "./dashboard-components/visitors-barchart";
 import { ScrollToTop } from "./ScrollToTop";
-import { PostsTable } from "./post-table";
+import { PostsTable } from "./dashboard-components/post-table";
 import { Footer } from "./Footer";
 import { Chatbot } from "./dashboard-components/chat-bot";
 
@@ -73,7 +73,7 @@ export const Dashboard = () => {
           <div className="col-span-8">
             <VisitorsBarchart />
           </div>
-          <div className="col-span-4">
+          <div className="md:col-span-4 col-span-8">
             <FollowersView />
           </div>
         </div>

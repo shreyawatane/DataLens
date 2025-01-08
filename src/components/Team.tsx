@@ -13,6 +13,7 @@ interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -26,6 +27,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQG_9Bjv45GZbA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731152153375?e=1741824000&v=beta&t=Q01o57JRLtg5Pj-Vxs7IoUK_ja2NDpbeKv1OVIF4LM4",
     name: "Pratap Parui",
     position: "Frontend Developer",
+	description: "Passionate about creating intuitive and dynamic user experiences.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -48,7 +50,8 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQFQIGSEgMB1mQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731182250556?e=1741824000&v=beta&t=NjKiDcuDU-EXFq2SJ0O5ObKsOpjj449H3vHzOuhopIk",
     name: "Shreya Watane",
-    position: "Tech Lead",
+    position: "Cybersecurity Enthusiast and Developer",
+	description: "Dedicated to securing systems and developing robust cybersecurity solutions.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -71,7 +74,8 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://media.licdn.com/dms/image/v2/C4E03AQEpaXO7hvUCSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646743604214?e=1741824000&v=beta&t=5ZQIQNH2ca74eaphxF_i2xuQOTo_d6U1Uh8omLXTL5A",
     name: "Rahmat ali Shaikh",
-    position: "Backend Developer",
+    position: "Cybersecurity Enthusiast and Developer",
+	description: "Focused on cybersecurity and developing secure applications.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -94,7 +98,8 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQEVr38cnTbNYQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693517283615?e=1741824000&v=beta&t=XSTMB3_6sx-lsUeePGs6Q3B2Bf1u1TWhfx7y3pMXZ_s",
     name: "Prathamesh Yandolli",
-    position: "pata nahi",
+    position: "Developer",
+	description: "Enthusiastic developer with a knack for problem-solving and innovation.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -151,7 +156,7 @@ export const Team = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, socialNetworks, description }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -169,7 +174,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                {description}
               </CardContent>
 
               <CardFooter>

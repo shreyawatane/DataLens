@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 "use client"
 import {
   Card,
@@ -8,45 +8,43 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin, TrendingUp } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 import { LightBulbIcon } from "./Icons";
 import { DisplayChart } from "./ui/DisplayChart";
 
 
 
 export const HeroCards = () => {
+	const navigate = useNavigate();
   return (
-    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className="hidden top-8 lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
       <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://github.com/shadcn.png"
+              src="https://i.ibb.co/TmG03Lx/DataLens.png"
             />
-            <AvatarFallback>SH</AvatarFallback>
+			<AvatarFallback>DL</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">DataLens</CardTitle>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>Transforming data into actionable insights.</CardContent>
       </Card>
 
       {/* DisplayChart */}
-    <Card className="absolute right-[20px] top-4 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-     <DisplayChart />
-    </Card>
-      
+      <Card className="absolute right-[20px] top-4 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+        <DisplayChart />
+      </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[150px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Free
@@ -63,19 +61,19 @@ export const HeroCards = () => {
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            Get started with essential features for social media analytics.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full" onClick={() => navigate('/dashboard')}>Start Free Trial</Button>
         </CardContent>
 
-        <hr className="w-4/5 m-auto mb-4" />
+        {/* <hr className="w-4/5 m-auto mb-4" /> */}
 
-        <CardFooter className="flex">
+        {/* <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["4 Team members", "4 GB Storage", "Up to 6 pages"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
@@ -87,20 +85,19 @@ export const HeroCards = () => {
               )
             )}
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[20px] bottom-[-20px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] -right-[20px] bottom-[-20px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Advanced Analytics</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              Leverage advanced analytics to gain deeper insights into your social media performance.
             </CardDescription>
           </div>
         </CardHeader>

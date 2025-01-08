@@ -98,6 +98,8 @@
     --color-other: #34A853; */
     --chart-1: 210, 100%, 56%;
     --chart-2: 120, 100%, 50%;
+    --chart-3: 0, 72%, 51%;
+    --chart-4: 136, 53%, 43%;
   }
 
   .dark {
@@ -131,4 +133,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html, body {
+  overflow-x: hidden;
 }
