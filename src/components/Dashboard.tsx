@@ -6,7 +6,11 @@ import { PerformanceChart } from "./dashboard-components/performance-chart";
 import { StatsCards } from "./dashboard-components/stats-cards";
 import { PieChartData } from "./dashboard-components/pie-chart";
 import { AreaChartLegend } from "./dashboard-components/area-charts";
-// import { DistributionChart } from "./dashboard-components/distribution-chart";
+import { FollowersView } from "./followers-view";
+import { VisitorsBarchart } from "./visitors-barchart";
+import { ScrollToTop } from "./ScrollToTop";
+import { PostsTable } from "./post-table";
+import { Footer } from "./Footer";
 import { Chatbot } from "./dashboard-components/chat-bot";
 
 export const Dashboard = () => {
@@ -64,9 +68,24 @@ export const Dashboard = () => {
             <PerformanceChart />
           </div>
         </div>
+
+        <div className="grid gap-4 md:grid-cols-12 px-2 md:px-0">
+          <div className="col-span-8">
+            <VisitorsBarchart />
+          </div>
+          <div className="col-span-4">
+            <FollowersView />
+          </div>
+        </div>
+
+        <div className="px-2 md:px-0">
+          <PostsTable />
+        </div>
       </div>
 
       <Chatbot />
+      <Footer />
+      <ScrollToTop />
     </>
   );
 };
