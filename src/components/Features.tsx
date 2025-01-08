@@ -17,36 +17,56 @@ interface FeatureProps {
 }
 
 const features: FeatureProps[] = [
-  {
-    title: "Responsive Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
-  },
-  {
-    title: "Intuitive user interface",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
-  },
-  {
-    title: "AI-Powered insights",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
-  },
+	{
+		title: "Chatbot Integration",
+		description:
+			"Interact with your data using our integrated chatbot. Get instant insights and answers to your queries.",
+		image: image4,
+	},
+	{
+		title: "Real-time Analytics",
+		description:
+			"Monitor your social media performance in real-time. Make data-driven decisions on the fly.",
+		image: image3,
+	},
+	{
+		title: "Comprehensive Reports",
+		description:
+			"Generate detailed reports to uncover actionable insights and optimize your social media strategy.",
+		image: image,
+	},
+	{
+		title: "User-friendly Interface",
+		description:
+			"Navigate through your data effortlessly with our intuitive and user-friendly interface.",
+		image: image,
+	},
+	{
+		title: "Data Export",
+		description:
+			"Easily export your data in various formats for further analysis and sharing.",
+		image: image4,
+	},
+	{
+		title: "Multi-platform Support",
+		description:
+			"Access your data and insights across multiple platforms and devices seamlessly.",
+		image: image3,
+	},
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+	"Chatbot Integration",
+	"Real-time Analytics",
+	"Comprehensive Reports",
+	"User-friendly Interface",
+	"Data Export",
+	"Multi-platform Support",
+	"Secure Data Handling",
+	"24/7 Support",
+	"Advanced Sentiment Analysis",
+	"Trend Prediction",
+	"Automated Insights"
 ];
 
 export const Features = () => {

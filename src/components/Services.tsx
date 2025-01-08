@@ -10,28 +10,28 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Chatbot Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Interact with your data using our integrated chatbot. Get instant insights and answers to your queries.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Real-time Analytics",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Monitor your social media performance in real-time. Make data-driven decisions on the fly.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Comprehensive Reports",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Generate detailed reports to uncover actionable insights and optimize your social media strategy.",
     icon: <MagnifierIcon />,
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="services" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -41,9 +41,8 @@ export const Services = () => {
             Services
           </h2>
 
-          <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+          <p className="text-muted-foreground text-xl mt-4 mb-8">
+            Discover our range of services designed to help you leverage your data effectively.
           </p>
 
           <div className="flex flex-col gap-8">

@@ -21,14 +21,14 @@ const data = [
 
 export function PerformanceChart() {
   return (
-    <Card className="col-span-4">
+    <Card className="col-span-full">
       <CardHeader>
         <CardTitle>Post Performance Over Time</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="h-[300px]">
+        <div className="h-[250px] md:h-[300px] w-full">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={data}>
+            <LineChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="date" />
               <YAxis />
