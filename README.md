@@ -3,7 +3,7 @@
 ### This project is developed for the Level Supermind Hackathon to analyze mock social media engagement data using Langflow and DataStax Astra DB
 
 ## 📖 Table of Contents  
-1. [About the Project](#t)  
+1. [About the Project](#about_the_project)  
 2. [Objective](#objective)  
 3. [Tech Stack](#tech-stack)  
 4. [Installation](#installation)  
@@ -13,7 +13,7 @@
 8. [License](#license)  
 9. [Contact](#contact)
 
-## ℹ️ **About the Project**  
+## **About the Project**  
 
 **DataLens** is a social media analytics tool that provides actionable insights into engagement metrics. It helps users analyze how different types of posts (carousels, reels, images) perform and offers suggestions to improve social media strategies using GPT.
 
