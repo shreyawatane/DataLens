@@ -3,13 +3,13 @@
 ### This project is developed for the Level Supermind Hackathon to analyze mock social media engagement data using Langflow and DataStax Astra DB
 
 ## 📖 Table of Contents  
-1. [About the Project](#about-the-project)  
+1. [About the Project](#t)  
 2. [Objective](#objective)  
 3. [Tech Stack](#tech-stack)  
 4. [Installation](#installation)  
 5. [Usage](#usage)  
 6. [Insights Example](#insights-example)  
-7. [Contributing](#contributing)  
+7. [System Architectur](#contributing)  
 8. [License](#license)  
 9. [Contact](#contact)
 
