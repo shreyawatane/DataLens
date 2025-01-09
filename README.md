@@ -2,14 +2,14 @@
 ### Uncover actionable insights and optimize your social media strategy with DataLens!
 ### This project is developed for the Level Supermind Hackathon to analyze mock social media engagement data using Langflow and DataStax Astra DB
 
-## 📖 Table of Contents  
+## Table of Contents  
 1. [About the Project](#about_the_project)  
-2. [Objective](#objective)  
+2. [Objective](#**Objective** )  
 3. [Tech Stack](#tech-stack)  
 4. [Installation](#installation)  
 5. [Usage](#usage)  
 6. [Insights Example](#insights-example)  
-7. [System Architectur](#contributing)  
+7. [System Architecture](#system_architecture)  
 8. [License](#license)  
 9. [Contact](#contact)
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🎯 **Objective**  
+## **Objective**  
 
 The goal of this project is to:  
 1. Simulate social media engagement data (likes, shares, comments, post types).  
@@ -28,7 +28,7 @@ The goal of this project is to:
 
 ---
 
-## 🛠 **Tech Stack**  
+## **Tech Stack**  
 
 | Technology       | Purpose                           |
 |------------------|-----------------------------------|
@@ -38,7 +38,7 @@ The goal of this project is to:
 
 ---
 
-## 💻 **Installation**  
+## **Installation**  
 
 Follow these steps to set up the project locally:
 
@@ -46,7 +46,7 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/yourusername/DataLens.git
    
-## 🚀 **Usage**
+## **Usage**
 
 Follow these steps to use **DataLens**:
 
@@ -54,7 +54,7 @@ Follow these steps to use **DataLens**:
    ```bash
    langflow
 
-## 📊 **Insights Example**
+## **Insights Example**
 
 Here are some sample insights that **DataLens** can generate:  
 
@@ -63,13 +63,13 @@ Here are some sample insights that **DataLens** can generate:
 
 These insights can help users optimize their social media strategies.
 
-## 🏗️ **System Architecture**
+## **System Architecture**
 
 The architecture of **DataLens** is divided into two key layers: **Frontend Layer** and **Backend Layer**. Here's a detailed breakdown:
 
 ---
 
-### 🎨 **Frontend Layer**
+### **Frontend Layer**
 
 #### **Landing Page**
 The landing page provides an engaging introduction to **DataLens** with the following components:
@@ -89,7 +89,7 @@ The core feature of **DataLens**, providing users with actionable insights into 
 
 ---
 
-### 🔧 **Backend Layer**
+### **Backend Layer**
 
 #### **Proxy Server**
 The backend includes a **proxy server** to handle client requests and manage real-time data flow:
