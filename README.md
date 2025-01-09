@@ -10,8 +10,6 @@
 5. [Usage](#usage)  
 6. [Insights Example](#insights-example)  
 7. [System Architecture](#system-architecture)  
-8. [License](#license)  
-9. [Contact](#contact)
 
 ## **About the Project**  
 
