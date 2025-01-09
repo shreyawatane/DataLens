@@ -26,7 +26,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQG_9Bjv45GZbA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731152153375?e=1741824000&v=beta&t=Q01o57JRLtg5Pj-Vxs7IoUK_ja2NDpbeKv1OVIF4LM4",
     name: "Pratap Parui",
-    position: "Frontend Developer",
+    position: "Consultant | Frontend Developer",
 	description: "Passionate about creating intuitive and dynamic user experiences.",
     socialNetworks: [
       {

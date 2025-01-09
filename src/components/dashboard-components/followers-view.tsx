@@ -37,12 +37,10 @@ export function FollowersView() {
     // <Card className="h-full">
     <Card>
       <CardHeader>
-        <CardTitle>Bar Chart - Negative</CardTitle>
+        <CardTitle>Bar Chart - Total Followers</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
-      {/* <CardContent className="h-64"> */}
       <CardContent>
-        {/* <ChartContainer config={chartConfig} className="h-full"> */}
         <ChartContainer config={chartConfig}>
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
@@ -68,10 +66,10 @@ export function FollowersView() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Followers Increase by 2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          March and May saw a decrease in followers
         </div>
       </CardFooter>
     </Card>

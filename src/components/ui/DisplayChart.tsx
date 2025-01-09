@@ -46,7 +46,7 @@ const chartConfig = {
     color: "hsl(var(--chart-4))",
   },
   other: {
-    label: "Other",
+    label: "Other[musics, IG Filters]",
     color: "hsl(var(--chart-5))",
   },
 } satisfies ChartConfig

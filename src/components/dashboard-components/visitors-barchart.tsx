@@ -140,9 +140,9 @@ export function VisitorsBarchart() {
     <Card className="w-full">
       <CardHeader className="flex flex-col items-stretch space-y-2 border-b p-0 sm:flex-row sm:space-y-0">
         <div className="flex flex-1 flex-col justify-center gap-1 p-4 sm:px-6 sm:py-5">
-          <CardTitle className="text-lg sm:text-xl">Bar Chart - Interactive</CardTitle>
+          <CardTitle className="text-lg sm:text-xl">Bar Chart - Visitors By Devices</CardTitle>
           <CardDescription className="text-sm">
-            Showing total visitors for the last 3 months
+            Showing total visitors for Time
           </CardDescription>
         </div>
         <div className="flex flex-row sm:flex-col">

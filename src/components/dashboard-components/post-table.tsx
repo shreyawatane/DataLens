@@ -39,7 +39,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 interface Post {
   id: string
-  type: "Reel" | "Carousel" | "Static"
+  type: "Reel" | "Carousel" | "Photos" | "Stories" | "Other"
   date: string
   likes: number
   shares: number
@@ -66,7 +66,33 @@ const data: Post[] = [
     comments: 76,
     engagementRate: "4.8%",
   },
-  // Add more sample data as needed
+  {
+    id: "3",
+    type: "Photos",
+    date: "2024-03-29",
+    likes: 750,
+    shares: 123,
+    comments: 45,
+    engagementRate: "3.5%",
+  },
+  {
+    id: "4",
+    type: "Stories",
+    date: "2024-03-28",
+    likes: 1500,
+    shares: 500,
+    comments: 100,
+    engagementRate: "6.0%",
+  },
+  {
+    id: "5",
+    type: "Other",
+    date: "2024-03-27",
+    likes: 1100,
+    shares: 300,
+    comments: 80,
+    engagementRate: "5.0%",
+  },
 ]
 
 export const columns: ColumnDef<Post>[] = [

@@ -43,7 +43,7 @@ export function AreaChartLegend() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Area Chart - Legend</CardTitle>
+        <CardTitle>Area Chart - Visitors</CardTitle>
         <CardDescription>
           Showing total visitors for the last 6 months
         </CardDescription>
