@@ -7,9 +7,10 @@ export class LangflowClient {
             "Authorization": `Bearer ${this.applicationToken}`
         };
 
+        // Use the proxy server URL
         const url = `${this.baseURL}${endpoint}`;
-        console.log('Sending request to:', url);
-        
+
+
         try {
             const response = await fetch(url, {
                 method: 'POST',
@@ -32,8 +33,17 @@ export class LangflowClient {
     }
 
     async initiateSession(flowId: string, langflowId: string, inputValue: string, inputType = 'chat', outputType = 'chat', stream = false, tweaks = {}) {
-        const endpoint = `/lf/${langflowId}/api/v1/run/${flowId}?stream=${stream}`;
-        return this.post(endpoint, { input_value: inputValue, input_type: inputType, output_type: outputType, tweaks: tweaks });
+        const endpoint = `/run-flow`;
+        const payload = {
+            flowId,
+            langflowId,
+            message: inputValue,
+            input_type: inputType,
+            output_type: outputType,
+            stream,
+            tweaks
+        };
+        return this.post(endpoint, payload);
     }
 
     async runFlow(flowId: string, langflowId: string, inputValue: string) {
@@ -54,7 +64,9 @@ export class LangflowClient {
         if (response && response.outputs) {
             const flowOutputs = response.outputs[0];
             const firstComponentOutputs = flowOutputs.outputs[0];
-            return firstComponentOutputs.outputs?.message?.message?.text || firstComponentOutputs.outputs?.message || "No response received";
+            return firstComponentOutputs.outputs?.message?.message?.text || 
+                   firstComponentOutputs.outputs?.message || 
+                   "No response received";
         }
         
         throw new Error("Invalid response format");

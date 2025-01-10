@@ -8,14 +8,5 @@ export default defineConfig({
         alias: {
             "@": path.resolve(__dirname, "./src"),
         },
-    },
-    server: {
-        proxy: {
-            '/langflow-api': {
-                target: 'https://api.langflow.astra.datastax.com',
-                changeOrigin: true,
-                rewrite: (path) => path.replace(/^\/langflow-api/, ''),
-            }
-        }
     }
 });

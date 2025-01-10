@@ -49,7 +49,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <img src="src/assets/DataLens.png" alt="Data Lens Logo" className="h-6 w-6 mr-2" />
+              <img src="/DataLens.png" alt="Data Lens Logo" className="h-6 w-6 mr-2" />
               Data Lens
             </a>
           </NavigationMenuItem>

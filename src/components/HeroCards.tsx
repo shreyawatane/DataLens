@@ -25,7 +25,7 @@ export const HeroCards = () => {
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://i.ibb.co/TmG03Lx/DataLens.png"
+              src="https://i.ibb.co/g4QhHRJ/DataLens.png"
             />
 			<AvatarFallback>DL</AvatarFallback>
           </Avatar>
