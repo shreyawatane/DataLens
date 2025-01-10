@@ -22,7 +22,7 @@ export const HowItWorks = () => {
         <CardContent className="p-2">
             <div className="relative w-full h-0" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
                 <iframe
-                    src="https://www.youtube-nocookie.com/embed/dRuRID5JoQY?si=UevDu6iDecmuFlg_"
+                    src="https://www.youtube.com/watch?v=abVJhnymuNk"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
