@@ -23,7 +23,15 @@ export const Dashboard = () => {
               <h1 className="text-xl md:text-2xl font-bold tracking-tight mb-4 md:mb-0">Dashboard</h1>
               <div className="flex flex-col md:flex-row gap-3">
                 <DateRangePicker />
-                <Button className="w-full md:w-auto">
+                <Button className="w-full md:w-auto"
+                 onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/instagram_data.csv';
+                    link.download = 'instagram_data.csv';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}>
                   Download
                   <Download className="ml-2 w-5 h-5" />
                 </Button>
