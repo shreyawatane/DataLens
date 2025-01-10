@@ -32,7 +32,9 @@ The goal of this project is to:
 |------------------|-----------------------------------|
 | DataStax Astra DB| Database for storing engagement data |
 | Langflow         | Workflow creation and GPT integration |
-| GPT              | To generate insights based on the data |
+| Groq             | To generate insights based on the data |
+| React            | Frontend|
+| Python            | Server|
 
 ---
 
@@ -42,15 +44,59 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourusername/DataLens.git
+   git clone https://github.com/shreyawatane/DataLens.git
+   ```
    
+2. **Navigate to the Client Directory**  
+   ```bash
+   cd client
+   ```
+
+3. **Add a `.env` File to the Root Directory**  
+   Create a `.env` file in the `client` folder with the following template:  
+   ```env
+   VITE_API_BASE_URL="your-proxy-server-url" 
+   VITE_API_AUTH_TOKEN="your-auth-token"
+   VITE_FLOW_ID="your-flow-id"
+   VITE_LANGFLOW_ID="your-langflow-id"
+   ```
+   > Replace placeholder values with your actual credentials.
+
+4. **Navigate to the Server Directory**  
+   ```bash
+   cd ../server
+   ```
+
+5. **Add a `.env` File to the Server Directory**  
+   Create a `.env` file in the `server` folder with the following template:  
+   ```env
+   BASE_API_URL=https://api.langflow.astra.datastax.com
+   APPLICATION_TOKEN=your-api-token
+   LANGFLOW_ID=your-langflow-id
+   FLOW_ID=your-flow-id
+   ```
+   > Use the provided `BASE_API_URL` as-is. Replace other placeholders with your actual credentials.
+
+6. **Host the Server**  
+   Host your server or run it locally. If running locally, use the generated local URL as the value for `VITE_API_BASE_URL` in the client `.env` file.
+
+---
+
 ## **Usage**
 
-Follow these steps to use **DataLens**:
+1. **Start the Server**  
+   Navigate to the `server` directory and start the server.
 
-1. **Open Langflow** in your browser by running the command:  
+2. **Start the Client**  
+   Navigate back to the `client` directory and run:  
    ```bash
-   langflow
+   npm run dev
+   ```
+
+3. **Open Project in browser**  
+   Access the application in your browser using the client URL provided by the development server.
+
+--- 
 
 ## **Insights Example**
 
@@ -84,6 +130,7 @@ The core feature of **DataLens**, providing users with actionable insights into 
 - **Data Visualization Section**: Interactive charts and graphs to represent engagement data.  
 - **Analytics Insights Panel**: Displays GPT-generated insights based on engagement data.  
 - **Data Grid for Detailed View**: A tabular format for users to view post-level details.
+- **Assitant**: Get insights about the data based on user queries.
 
 ---
 
@@ -92,9 +139,8 @@ The core feature of **DataLens**, providing users with actionable insights into 
 #### **Proxy Server**
 The backend includes a **proxy server** to handle client requests and manage real-time data flow:
 
-- **WebSocket Connections**: Supports real-time data streaming and interactions.  
 - **Request Handling**: Manages incoming requests from the frontend.  
-- **Response Streaming**: Streams data back to the frontend for seamless performance.  
+- **Response Streaming**: Streams data back to the frontend removing the headers that makes your browser block them for seamless performance.
 - **Error Management**: Handles errors and ensures system reliability.
 
 #### **Data Processing**
@@ -102,6 +148,6 @@ The backend processes engagement data to generate meaningful insights:
 
 - **Text Splitting and Chunking**: Splits large text data into smaller chunks for processing.  
 - **Data Parsing**: Parses incoming data to prepare it for analysis.  
-- **Vector Store Implementation**: Stores processed data effici
+- **Vector Store Implementation**: Stores processed data efficiently.
 
 Thank you for taking the time to explore the **DataLens** Social Media Analytics Platform. We hope this documentation gives you a clear understanding of how the platform works. If you have any questions or need further details, feel free to dive into the individual sections or reach out to the development team—we're here to help!
